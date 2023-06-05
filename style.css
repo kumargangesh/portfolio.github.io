@@ -1,0 +1,1067 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(18, 16, 16);
+    color: #fff;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("gangeshKumarImageHD.png");
+    background-size: auto 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#header nav p{
+    display: inline;
+    color: #ff004f;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+.container h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+.header-text p{
+    margin-top: 13%;
+    font-size: 35px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+ /* ----------------  About Me ------------------  */
+
+ #about{
+    padding: 80px 0;
+    color: #ababab;
+ }
+
+ .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ .about-col-1{
+    flex-basis: 35%;
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 100%;
+ }
+
+ .about-col-1 img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #ff004f;
+    animation-name: movingImage;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+ }
+
+ .about-col-1 img:hover{
+   box-shadow: 2px 10px 30px gold;
+   border-radius: 10px;
+ }
+
+ @keyframes movingImage{
+   10%{
+      margin-top: 4px;
+      box-shadow: 2px 14px 30px gold;
+   }
+   20%{
+      margin-top: 8px;
+      box-shadow: 2px 18px 30px gold;
+   }
+   30%{
+      margin-top: 12px;
+      box-shadow: 2px 22px 30px gold;
+   }
+   40%{
+      margin-top: 16px;
+      box-shadow: 2px 26px 30px gold;
+   }
+   50%{
+      margin-top: 20px;
+      box-shadow: 2px 30px 30px gold;
+   }
+   60%{
+      margin-top: 24px;
+      box-shadow: 2px 34px 30px gold;
+   }
+   70%{
+      margin-top: 28px;
+      box-shadow: 2px 38px 30px gold;
+   }
+   80%{
+      margin-top: 32px;
+      box-shadow: 2px 42px 30px gold;
+   }
+   90%{
+      margin-top: 36px;
+      box-shadow: 2px 46px 30px gold;
+   }
+   100%{
+      margin-top: 0px;
+      box-shadow: 2px 50px 30px gold;
+   }
+ }
+
+ .about-col-2{
+    flex-basis: 60%;
+    /* border: 1px solid white; */
+ }
+
+ .about-col-2 #about-me{
+    margin-top: 15px;
+    font-size: 25px;
+    text-align: center;
+    /* font-weight: bolder; */
+ }
+
+ .about-col-2 hr{
+   height: 7px;
+   background-color: #ff004f;
+   border-radius: 3px;
+   margin: auto;
+   width: 90%;
+ }
+
+ .about-col-2 b{
+    color: #ff004f;
+ }
+
+.about-col-2  .sub-title{
+    text-align: center;
+    padding: 10px;
+    font-size: 80px;
+    color: rgb(167, 250, 42);
+ }
+
+ .tab-titles{
+    display: flex;
+    margin: 40px 0 40px;
+    /* border: 1px solid white; */
+ }
+
+ .tab-links{
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+ }
+
+ .tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+   background: #ff004f;
+   position: absolute;
+   left: 0;
+   bottom: -8px;
+   transition: 0.5s;
+ }
+
+ .tab-links.active-link::after{
+    width: 50%;
+ }
+
+ .tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    margin-top: 20px;
+ }
+
+ .tab-contents ul li span{
+    color: #ff004f;
+    font-size: 18px;
+    font-weight: bolder;
+ }
+ 
+ .tab-contents{
+    display: none;
+ }
+
+ .tab-contents.active-tab{
+    display: block;
+ }
+
+
+ /* ------------------------ skills ---------------------------- */
+
+
+ #skills{
+   margin-top: 5%;
+   /* border: 1px solid white; */
+   width: 100%;
+   height: auto;
+ }
+
+ #skills h1{
+   text-align: center;
+   font-size: 80px;
+   padding: 10px;
+   color: rgb(167, 250, 42);
+ }
+
+ #skillName{
+   height: 7px;
+   background-color: #ff004f;
+   border-radius: 3px;
+   margin: auto;
+   width: 90%;
+}
+
+.web,.programming, .database{
+   display: flex;
+   width: 80%;
+   align-items: center;
+   /* border: 2px solid white; */
+   margin: auto;
+   margin-top: 30px;
+   padding: 5%;
+}
+
+.web img, .programming img{
+   margin: 0px 7% 0px 7%;
+   padding: 5px;
+   border: 5px solid #ff004f;
+   border-radius: 10px;
+   animation-name: changeColor;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+
+#skills h2{
+   margin-top: 100px;
+   font-size: 40px;
+   text-align: center;
+}
+
+#skillsHR{
+   height: 7px;
+   background-color: #ff004f;
+   border-radius: 3px;
+   margin: auto;
+   width: 40%;
+   margin-top: 30px;
+}
+
+.app{
+   display: flex;
+   width: 80%;
+   align-items: center;
+   /* border: 2px solid white; */
+   margin: auto;
+   margin-top: 50px;
+   padding: 5%;
+}
+
+.app img,.database img{
+   /* border: 2px solid #ff004f; */
+   margin: 0px 40% 0px 40%;
+   border: 5px solid #ff004f;
+   border-radius: 10px;
+   animation-name: changeColor;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes changeColor{
+   50%{
+      background-color: white;
+   }100%{
+      background-color: black;
+   }
+}
+
+/* .web img:hover, .app img:hover, .programming img:hover, .database img:hover{
+   background-color: white;
+   border-radius: 10px;
+} */
+
+/* ------------------------------- my achievements -------------------------- */
+
+#achievement{
+   margin-top: 5%;
+   /* border: 1px solid white; */
+   width: 100%;
+   height: auto;
+ }
+
+ #achievement #name{
+   text-align: center;
+   font-size: 80px;
+   padding: 10px;
+   color: rgb(167, 250, 42);
+ }
+
+ #achievement hr{
+   height: 7px;
+   background-color: #ff004f;
+   border-radius: 3px;
+   margin: auto;
+   width: 90%;
+}
+
+#achievement .unthinkable, .threads, .smartBrain, .leetCode{
+   margin: 30px auto;
+   /* border: 1px solid white; */
+   width: 90%;
+   display: flex;
+   flex-direction: row;
+   padding: 5%;
+}
+
+.unthinkable .unthinkable2,
+.smartBrain, .smartBrain2{
+   /* border: 1px solid white; */
+   margin-left: 5%;
+   width: 100%;
+   /* padding: 3%; */
+   text-align: center;
+}
+
+.smartBrain, .smartBrain2{
+   width: 90%;
+}
+
+
+#achievement h1{
+   margin-top: 10%;
+   font-size: 50px;
+   color: chartreuse;
+}
+
+#achievement h3{
+   margin-top: 5%;
+   font-size: 20px;
+   padding: 0% 13%;
+   letter-spacing: 1px;
+}
+
+#achievement u,a{
+   color: #ff004f;
+}
+
+.threads .threads2,
+.leetCode, .leetCode2{
+   /* border: 1px solid white; */
+   margin-right: 5%;
+   width: 100%;
+   /* padding: 3%; */
+   text-align: center;
+}
+
+#unthinkableImg, #threadsImg, #smartBrainImg, #leetCodeImg{
+   opacity: 0;
+   animation-name: animateImage;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes animateImage{
+   50%{opacity: 0.5;}
+   100%{opacity: 1;}
+}
+
+/* .leetCode, .leetCode2{
+   width: 90%;
+   color: chartreuse;
+}  */
+
+
+/* ----------------------------my projects---------------------------------- */
+
+#projects{
+   margin-top: 100px;
+   margin-bottom: 5%;
+}
+
+#projects h1{
+   /* border: 1px solid white; */
+   font-size: 80px;
+   text-align: center;
+   color: rgb(167, 250, 42);
+}
+
+#projects hr{
+   height: 7px;
+   background-color: #ff004f;
+   border-radius: 3px;
+   margin: auto;
+   width: 90%;
+   margin-top: 30px;
+}
+
+.project{
+   margin: auto;
+   width: 80%;
+   height: auto;
+   display: flex;
+   /* border: 1px solid white; */
+   margin-top: 5%;
+   align-items: center;
+   margin-bottom: 1%;
+   padding: 2%;
+}
+
+.whatsapp, .airline, .password{
+   height: 400px;
+   width: 28%;
+   margin: 3%;
+   border-radius: 10px;
+}
+
+.whatsapp{
+   background-image: url("project/app.png");
+   background-size: 100% 100%;
+}
+
+.airline{
+   background-image: url("project/aeroplane.jpeg");
+   background-size: 100% 100%;
+}
+
+.password{
+   background-image: url("project/java.jpeg");
+   background-size: 100% 100%;
+}
+
+#appProjectImage, #aeroplaneProjectImage, #javaProjectImage{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+}
+
+.layer{
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+   border-radius: 10px;
+   left: 0;
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 0 40px;
+   text-align: center;
+   font-size: 14px;
+   opacity: 0;
+   transition: 1s;
+}
+
+.layer h3{
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+
+.layer a{
+   margin-top: 20px;
+   color: white;
+   text-align: center;
+   font-size: 16px;
+   text-decoration: none;
+   background-color: white;
+   color: #ff004f;
+   padding: 5%;
+   border-radius: 10%;
+   font-weight: 900;
+}
+
+.layer:hover{
+   opacity: 1;
+}
+
+#seeMore{
+   /* border: 1px solid white; */
+   text-align: center;
+}
+
+#seeMore a{
+   text-decoration: none;
+}
+
+#seeMoreButton{
+   display: block;
+   margin: 1% auto;
+   width: fit-content;
+   border: 1px solid #ff004f;
+   padding: 1% 3%;
+   border-radius: 6px;
+   background-color: black;
+   color: white;
+   animation-name: changeButtonColor;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   transition: background 0.5s;
+}
+
+@keyframes changeButtonColor{
+   50%{
+      background-color: #ff004f;
+   }
+   100%{
+      background-color: black;
+   }
+}
+
+
+
+/* #seeMoreButton:hover{
+   background: #ff004f;
+} */
+
+
+
+/* ----------------------- contact-me ---------------------------- */
+
+#contact{
+   margin-top: 5%;
+}
+
+#contact h1{
+   /* border: 1px solid white; */
+   font-size: 80px;
+   text-align: center;
+   color: rgb(167, 250, 42);
+}
+
+#contact hr{
+   height: 7px;
+   background-color: #ff004f;
+   border-radius: 3px;
+   margin: auto;
+   width: 90%;
+   margin-top: 30px;
+}
+
+.container{
+   margin-top: 3%;
+   margin-bottom: 5%;
+}
+
+.row{
+   display: flex;
+   margin-top: 3%;
+}
+
+.social-icons{
+   /* border: 1px solid white; */
+   margin-top: 20px;
+}
+
+.social-icons img{
+   margin-top: 1.5%;
+   margin-bottom: 1.5%;
+   margin-left: 15%;
+   transition: transform 0.5;
+}
+
+.social-icons img:hover{
+   border: 5px solid #ff004f;
+}
+
+.contact-left{
+   /* border: 1px solid white; */
+   flex-basis: 35%;
+}
+
+.contact-right{
+   /* border: 1px solid white; */
+   flex-basis: 60%;
+}
+
+.contact-left p{
+   margin-top: 30px;
+}
+
+.mobile, .mail{
+   display: flex;
+   /* border: 1px solid white; */
+   align-items: center;
+   margin-top: 20px;
+}
+
+.mobile img, .mail img{
+   padding: 2%;
+   transition: transform 0.5;
+}
+
+.mobile img:hover, .mail img:hover{
+   transform: translateY(-5px);
+   
+}
+
+.mobile p, .mail p{
+   margin: auto;
+   font-size: 17px;
+   margin-left: 30px;
+   font-weight: 500;
+}
+
+.resume a{
+   text-decoration: none;
+}
+
+.resume{
+   margin-top: 10%;
+   /* border: 1px solid white; */
+}
+
+#downloadResume{
+   display: block;
+   margin: 1% 10px;
+   width: fit-content;
+   padding: 5% 7%;
+   border-radius: 6px;
+   background-color: #ff004f;
+   color: white;
+   transition: transform 0.5;
+   border: 2px solid #ff004f;
+}
+
+#downloadResume:hover{
+   transform: translateY(-5px);
+}
+
+.submitButton{
+   margin: 1% auto;
+   width: fit-content;
+   padding: 2% 6%;
+   border-radius: 6px;
+   background-color: #ff004f;
+   border: 2px solid #ff004f;
+   color: white;
+   transition: transform 0.5;
+}
+
+.submitButton:hover{
+   transform: translateY(-5px);
+   border: 2px solid #ff004f;
+}
+
+.contact-right form{
+   width: 100%;
+}
+
+form input, form textarea{
+   width: 100%;
+   border: 0;
+   outline: none;
+   background: #262626;
+   padding: 15px;
+   margin: 15px 0;
+   color: #fff;
+   font-size: 18px;
+   border-radius: 6px;
+}
+
+.copyright{
+   width: 100%;
+   text-align: center;
+   padding: 25px 0;
+   background: #262626;
+   font-weight: 300;
+   margin-top: 20px;
+   font-size: 22px;
+}
+
+#message{
+   color: #61b752;
+   /* border: 1px solid white; */
+   margin-top: 1%;
+}
+
+
+/* ----------------------------------------- for smaller screens --------------------------------------------- */
+
+
+#crossIcon, #menuIcon{
+   display: none;
+}
+
+
+@media(max-width: 700px){
+
+   #header{ 
+      background-image: url("gangeshKumarHalf.png");
+      background-size: 100% 100vh;
+   }
+
+   #header nav h1{
+      font-size: 23px;
+   }
+
+   #header nav p{
+      font-size: 55px;
+   }
+
+   .header-text{
+      margin-top: 100%;
+   }
+
+   .header-text p{
+      margin-top: 20px;
+      font-size: 20px;
+   }
+
+   .header-text h1{
+      font-size: 30px;
+   }
+
+   .header-text span{
+      font-size: 35px;
+   }
+
+   #crossIcon{
+      height: 3%;
+      width: 9%;
+   }
+
+   #menuIcon{
+      background-color: black;
+      height: 30%;
+      width: 10%;
+   }
+
+   #crossIcon, #menuIcon{
+      display: block;
+   }
+
+   nav ul{
+      background: #ff004f;
+      position: fixed;
+      top: 0;
+      right: -200px;
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 1s;
+   }
+
+   nav ul li{
+      display: block;
+      margin: 15%;
+   }
+
+   #crossIcon{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+   }
+
+   /* --------------------------------------- About Me -------------------------------------- */
+   
+   .row{
+      display: flex;
+      flex-direction: column;
+      margin: 5%;
+   }
+
+   .about-col-1, .about-col-2{
+      flex-basis: 0%;
+   }
+
+   .about-col-1 {
+      margin: 5%;
+   }
+
+   .about-col-1 img{
+      height: auto;
+   }
+
+   .about-col-2{
+      margin-top: 15%;
+   }
+
+   .about-col-2 .sub-title{
+      font-size: 60px;
+   }
+
+   .about-col-2 #about-me{
+      font-size: 15px;
+      text-align: center;
+   }
+
+   .about-col-2 .tab-titles .tab-links{
+      /* border: 1px solid white; */
+      margin: 5% auto;
+      font-size: 18px;
+   }
+
+   .tab-contents ul li{
+      list-style: none;
+      margin: 10px 0;
+      margin-top: 20px;
+   }
+  
+   .tab-contents ul li span{
+      color: #ff004f;
+      font-size: 18px;
+      font-weight: bolder;
+   }
+   
+   /* #skills{
+      /* border: 1px solid white; 
+   } */
+
+
+   /* ----------------------------------------------------- Skills ------------------------------------------------- */
+
+
+   #skills h1{
+      margin-top: 0%;
+      font-size: 60px;
+   }
+
+   #skills h2{
+      margin-top: 15%;
+      font-size: 35px;
+   }
+
+   .web, .app, .programming, .database{
+      /* border: 1px solid white; */
+      display: flex;
+      flex-direction: column;
+      margin-top: 5%;
+   }
+
+   #skills .web img{
+      margin-top: 10%;
+      height: 80%;
+      width: 80%;
+   }
+   
+   #skills .app img{
+      margin-top: 10%;
+      height: 80%;
+      width: 80%;
+   }
+   #skills .programming img{
+      margin-top: 10%;
+      height: 80%;
+      width: 80%;
+   }
+   #skills .database img{
+      margin-top: 10%;
+      height: 80%;
+      width: 80%;
+   }
+
+   /* -------------------------------------------------- my achievements ------------------------------------------------ */
+
+   #achievement #name{
+      /* text-align: center; */
+      font-size: 50px;
+      padding: 10px;
+      color: rgb(167, 250, 42);
+    }
+
+    #achievement .unthinkable {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #achievement img{
+      width: 100%;
+    }
+
+    #achievement h1{
+      font-size: 30px;
+    }
+
+    #achievement h3{
+      font-size: 17px;
+    }
+
+    #achievement .unthinkable .unthinkable2{
+      margin-left: 0%;
+      margin-top: 5%;
+    }
+
+    .threads, .smartBrain, .leetCode{
+      display: flex;
+      flex-direction: column;
+      /* border: 1px solid white; */
+    }
+
+   .unthinkable2, .threads2, .smartBrain2, .leetCode2{
+      /* border: 1px solid white; */
+      padding: 5%;
+    }
+
+    .threads2, .leetCode2{
+      margin-bottom: 5%;
+    }
+
+    .smartBrain2{
+      margin-top: 5%;
+    }
+
+    .leetCode{
+      width: 90%;
+    }
+
+    /* #achievement .leetCode #leetCodeImg{
+      border: 50px solid white;
+    } */
+
+
+   /* ------------------------------------------------- My Projects -------------------------------------------------- */
+
+
+   #projects h1{
+      font-size: 60px;
+   }
+
+   .project{
+      /* border: 1px solid white; */
+      display: flex;
+      flex-direction: column;
+   }
+
+   .whatsapp, .airline, .password{
+      /* border: 1px solid white; */
+      width: 100%;
+   }
+
+   #seeMoreButton{
+      display: block;
+      margin: 1% auto;
+      width: 35%;
+      border: 1px solid #ff004f;
+      padding: 3% 3%;
+      border-radius: 6px;
+      background-color: black;
+      color: white;
+      transition: background 0.5s;
+      margin-top: 10%;
+   }
+
+
+
+   /* ------------------------------------------------- Contact Me -------------------------------------------------------- */
+
+   #contact h1{
+      margin-top: 25%;
+      font-size: 60px;
+   }
+
+   #contact .social-icons{
+      /* border: 1px solid white; */
+      margin-top: 10%;
+   }
+
+   #contact .social-icons img{
+      height: 15%;
+      width: 15%;
+      margin: 1% 15% 1% 15%;
+   }
+
+   #downloadResume{
+      display: block;
+      margin: 1% auto;
+      width: fit-content;
+      padding: 5% 7%;
+      border-radius: 6px;
+      background-color: #ff004f;
+      color: white;
+      transition: transform 0.5;
+      border: 2px solid #ff004f;
+   }
+
+   .contact-right{
+      /* border: 1px solid white; */
+      margin-top: 20%;
+      padding: 5%;
+   }
+
+   form input, form textarea{
+      font-size: 12px;
+   }
+
+   .submitButton{
+      margin: 5% 25% 5% 25%;
+      width: 50%;
+      padding: 4% 6%;
+      border-radius: 6px;
+      background-color: #ff004f;
+      border: 2px solid #ff004f;
+      color: white;
+      transition: transform 0.5;
+   }
+
+   #message{
+      color: #61b752;
+      /* border: 1px solid white; */
+      margin-top: 1%;
+      text-align: center;
+   }
+   
+
+}
+
